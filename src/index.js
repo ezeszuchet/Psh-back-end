@@ -18,6 +18,8 @@ app.get('/', function (req, res) {
     res.send('Server is running on port 2000');
 });
 
-app.listen(2000, () => {
-    console.log(`Server is running on port 2000`)
+const PORT = process.env.PORT || 5001;
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`)
 });
