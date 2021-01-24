@@ -5,7 +5,7 @@ exports.lastStatCreated = (req, res) => {
     db.query(sql, (err, result) => {
         if (err) throw err;
         console.log("Select query OK", result);
-        return result
+        res.json(result)
     });
 };
 
