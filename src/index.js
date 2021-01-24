@@ -7,9 +7,9 @@ const playerJob = require('./job/index')
 const playerRoutes = require('./routes/player')
 const statRoutes = require('./routes/stat')
 
-cron.schedule('* * * * * *', function() {
+/*cron.schedule('* * * * * *', function() {
     playerJob.create();
-});
+});*/
 
 app.use('/players', playerRoutes);
 app.use('/stats', statRoutes);
