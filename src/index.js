@@ -5,7 +5,6 @@ const playerJob = require('./job/index')
 
 //routes
 const playerRoutes = require('./routes/player')
-const statRoutes = require('./routes/stat')
 
 /*cron.schedule('* * * * * *', function() {
     playerJob.create();
@@ -19,13 +18,12 @@ app.use((req, res, next) => {
 });
 
 app.use('/players', playerRoutes);
-app.use('/stats', statRoutes);
 
 app.get('/', function (req, res) {
     res.send('Server is running');
 });
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 2000;
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)

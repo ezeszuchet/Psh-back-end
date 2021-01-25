@@ -20,6 +20,3 @@ con.connect(function (err) {
 });
 
 module.exports = con;
-
-
-//TODO - Usar https://sequelize.org/master/ (orm)

@@ -1,3 +1,0 @@
-Levanto un server en Node para que React haga request a la propia api y no tenga que llamar a la base de datos
-
-El job lo haria en un archivo aparte que el index, pero no quiero meterme en problemas con el lugar donde lo deploye asi que prefiero hacerlo con la biblioteca "cron-node" y hacerlo en el mismo index

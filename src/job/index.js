@@ -25,5 +25,3 @@ exports.create = () => {
 
 const completeName = ({ title, first, last }) => title + "." + first + " " + last;
 const getRandomScore = (min, max) => Math.floor(Math.random() * (max - min) + min)
-
-//TODO delegar (Service)
