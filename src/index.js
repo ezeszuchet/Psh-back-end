@@ -6,9 +6,9 @@ const playerJob = require('./job/index')
 //routes
 const playerRoutes = require('./routes/player')
 
-/*cron.schedule('* * * * * *', function() {
+cron.schedule('*/5 * * * *', function() {
     playerJob.create();
-});*/
+});
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
