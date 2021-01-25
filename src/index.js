@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const cron = require('node-cron');
+const con = require('./db');
 const playerJob = require('./job/index')
 
 //routes
@@ -8,6 +9,7 @@ const playerRoutes = require('./routes/player')
 
 cron.schedule('*/5 * * * *', function() {
     playerJob.create();
+    console.log("Player created after 5 minutes");
 });
 
 app.use((req, res, next) => {
