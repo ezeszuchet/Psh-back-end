@@ -7,7 +7,7 @@ const playerJob = require('./job/index')
 //routes
 const playerRoutes = require('./routes/player')
 
-cron.schedule('* * * * * *', function() {
+cron.schedule('*/5 * * * *', function() {
     playerJob.create();
     console.log("Player created after 5 minutes");
 });
